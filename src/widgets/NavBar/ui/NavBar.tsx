@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import cls from "./NavBar.module.scss";
 import { classNames } from "shared/lib/classNames/classNames";
 import { AppLink } from "shared/ui/AppLink/AppLink";
-import ThemeSwitcher from "shared/ui/ThemeSwitcher";
+
 
 interface NavBarProps {
   className?: string;
