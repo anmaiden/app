@@ -6,9 +6,12 @@ Profile Feed App - это приложение для отображения н�
 
 ## Технологии
 
-- **TypeScript** 
-- **React** 
+- **TypeScript**  ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+- **React**  ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=blue)
+- **Redux-Toolkit** ![ReduxToolkit](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
+-  **CSS** ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
 - **i18next**
 - **Vite**
 - **Axios**
-- **Redux-Toolkit**
+
+
