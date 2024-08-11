@@ -3,6 +3,8 @@ import "./SideBar.module.scss";
 import cls from "./SideBar.module.scss";
 import { classNames } from "shared/lib/classNames/classNames";
 import ThemeSwitcher from "widgets/ThemeSwitcher";
+import LeftArrowIcon from "../../../../shared/assets/icons/left_icon_sidebar.svg";
+import RightArrowIcon from "../../../../shared/assets/icons/right_icon_sidebar.svg";
 import { LangSwitcher } from "widgets/LangSwitcher/LangSwitcher";
 
 interface SideBarProps {
@@ -22,7 +24,7 @@ export const SideBar: FC<SideBarProps> = (props) => {
         props.className,
       ])}
     >
-      <button onClick={handleToggleSidebar}>toggle</button>
+      <button onClick={handleToggleSidebar} className={classNames(cls.ToggleBtn)}>{collapsed ? < RightArrowIcon/> : <LeftArrowIcon />}</button>
       <div className={cls.switchers}>
         <ThemeSwitcher />
         <LangSwitcher />

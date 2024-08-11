@@ -21,7 +21,7 @@ export const ThemeSwitcher: FC<ThemeSwitcherProps> = (props) => {
       onClick={toggleTheme}
       className={classNames(cls.ThemeSwitcher, {}, [props.className])}
     >
-      {theme === Theme.DARK ? <LightIcon /> : <DarkIcon fill="white" />}
+      {theme === Theme.DARK ? <LightIcon /> : <DarkIcon />}
     </Button>
   );
 };
