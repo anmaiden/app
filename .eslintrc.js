@@ -6,7 +6,7 @@ module.exports = {
     extends: [
         'plugin:react/recommended',
         'airbnb',
-        'plugin:i18next/recommended'
+        'plugin:i18next/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -39,7 +39,7 @@ module.exports = {
         'react/destructuring-assignment': 0,
         'no-underscore-dangle': 'off',
         // erorrs of transleting will be only in *.jsx files
-        "no-underscore-dangle":["error", { "markupOnly": true }],
+        'i18next/no-literal-string': ['error', { markupOnly: true }],
     },
     globals: {
         __IS_DEV__: true,
