@@ -2,7 +2,6 @@
   height: calc(100vh - var(--navbar-height));
   width: var(--sidebar-width);
   background: var(--invert-bg-color);
-
   position: relative;
   transition: .4s ease-in-out;
 }
@@ -27,6 +26,7 @@
   background: transparent;
   width: 100%;
 }
+
 .ToggleBtn:hover{
   cursor: pointer;
 }
