@@ -41,10 +41,18 @@ module.exports = {
         'react/destructuring-assignment': 0,
         'no-underscore-dangle': 'off',
         // erorrs of transleting will be only in *.jsx files
-        'i18next/no-literal-string': ['error', { markupOnly: true }],
+        'i18next/no-literal-string': ['error', {
+            markupOnly: true, ignoreAttribute: ['data-testid'],
+        }],
         'max-len': ['error', { ignoreComments: true }, { code: 120 }],
     },
     globals: {
         __IS_DEV__: true,
     },
+    overrides: [{
+        files: ['**/src/**/*.test.{ts,tsx}'],
+        rules: {
+            'i18next/no-literal-string': 'off',
+        },
+    }],
 };
