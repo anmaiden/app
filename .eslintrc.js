@@ -42,7 +42,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
         // erorrs of transleting will be only in *.jsx files
         'i18next/no-literal-string': ['error', { markupOnly: true }],
-        'max-len': ['error', { ignoreComments: true }],
+        'max-len': ['error', { ignoreComments: true }, { code: 120 }],
     },
     globals: {
         __IS_DEV__: true,
