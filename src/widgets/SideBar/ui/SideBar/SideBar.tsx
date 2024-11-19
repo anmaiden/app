@@ -6,6 +6,7 @@ import cls from './SideBar.module.scss';
 
 import LeftArrowIcon from '../../../../shared/assets/icons/left_icon_sidebar.svg';
 import RightArrowIcon from '../../../../shared/assets/icons/right_icon_sidebar.svg';
+import { Button } from '../../../../shared/ui/Button/Button';
 
 interface SideBarProps {
   className?: string;
@@ -20,11 +21,19 @@ export const SideBar: FC<SideBarProps> = (props) => {
 
     return (
         <div
+            data-testid="sidebar"
             className={classNames(cls.SideBar, { [cls.collapsed]: collapsed }, [
                 props.className,
             ])}
         >
-            <button onClick={handleToggleSidebar} className={classNames(cls.ToggleBtn)}>{collapsed ? <RightArrowIcon /> : <LeftArrowIcon />}</button>
+            <Button
+                onClick={handleToggleSidebar}
+                className={classNames(cls.ToggleBtn)}
+                data-testid="sidebar-toggle"
+            >
+                {collapsed
+                    ? <RightArrowIcon /> : <LeftArrowIcon />}
+            </Button>
             <div className={cls.switchers}>
                 <ThemeSwitcher />
                 <LangSwitcher />
